@@ -1,0 +1,236 @@
+h2{
+	background-color: 	green;
+	width: 300px;
+	height: 200px;
+}
+h3{
+	background-color: green;
+	width: 300px;
+	height: 200px;
+}
+p{
+	width: 300px;
+	height: 200px;
+	background-color: yellow;
+	font-size: 25px;
+
+}
+.christmas{
+	float: right;
+		width: 300px;
+	height: 200px;
+}
+body{
+ background-image: radial-gradient(#212121 20%, transparent 20%),
+      radial-gradient(#fafafa 20%, transparent 20%);
+  background-color: #e53935;
+  background-position: 0 0, 50px 50px;
+  background-size: 100px 100px;
+}
+title{
+	background-color: blue;
+	width: 300px;
+	height: 200px;
+}
+HTML SCSS JSResult Skip Results Iframe
+EDIT ON
+$green: #24D024;
+$yellow: #fff952;
+$pink: #f53896;
+$red: #fb4545;
+$blue: #0A53DE;
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+body {
+    background-color: #000000;
+  overflow : hidden; 
+}
+
+h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.drop {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px #FFF
+}
+
+.animate {
+    animation: falling 5.5s infinite ease-in;
+}
+
+@keyframes falling {
+    0% {
+        top: -10px;
+        // opacity: 1;
+    }
+    10% {
+        transform: translateX(-5px)
+    }
+    20% {
+        transform: translateX(5px)
+    }
+    30% {
+        transform: translateX(-5px)
+    }
+    40% {
+        transform: translateX(5px)
+    }
+    60% {
+        transform: translateX(-5px)
+    }
+    70% {
+        transform: translateX(5px)
+    }
+    80% {
+        transform: translateX(-5px)
+    }
+    90% {
+        transform: translateX(5px)
+    }
+    95% {
+        opacity: 1
+    }
+    100% {
+        top: 95vh;
+        opacity: 0;
+    }
+}
+
+.line{
+  text-align: center; 
+}
+
+li {
+    position: relative;
+    margin: 0 15px;
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    width: 12px;
+    height: 28px;
+    border-radius: 50%;
+    top: 35px;
+    background: #fff;
+    &:before {
+        content: "";
+        position: absolute;
+        background: #222;
+        width: 10px;
+        height: 9px;
+        border-radius: 3px;
+        top: -4px;
+        left: 1px;
+    }
+    &:after {
+        content: "";
+        top: -14px;
+        left: 9px;
+        position: absolute;
+        width: 52px;
+        height: 19px;
+        border-bottom: solid #222 2px;
+        border-radius: 30%;
+    }
+}
+
+.red {
+    background-color: $red;
+    animation: lightningRed 1s infinite;
+}
+
+.green {
+    background-color: $green;
+    animation: lightningGreen 0.8s infinite;
+}
+
+.yellow {
+    background-color: $yellow;
+    animation: lightningYellow 0.9s infinite;
+}
+
+.blue {
+    background-color: $blue;
+    animation: lightningBlue 1.1s infinite;
+}
+
+.pink {
+    background-color: $pink;
+    animation: lightningPink 1.2s infinite;
+}
+
+@keyframes lightningRed {
+    0% {
+        box-shadow: 5px 10px 35px 10px $red;
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 5px 10px 35px 10px $red;
+    }
+}
+
+@keyframes lightningGreen {
+    0% {
+        box-shadow: 5px 0 35px 10px $green;
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 5px 0 35px 10px $green;
+    }
+}
+
+@keyframes lightningYellow {
+    0% {
+        box-shadow: 5px 0 35px 10px $yellow;
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 5px 0 35px 10px $yellow;
+    }
+}
+
+@keyframes lightningBlue {
+    0% {
+        box-shadow: 5px 0 35px 10px $blue;
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 5px 0 35px 10px $blue;
+    }
+}
+
+@keyframes lightningPink {
+    0% {
+        box-shadow: 5px 0 35px 10px $pink;
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 5px 0 35px 10px $pink;
+    }
+}
+
+@media (max-width: 1024px) {
+  .line{
+    padding: 0; 
+  }
+    li {
+        margin: 0 15px 20px 15px;
+    }
+}
